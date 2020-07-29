@@ -1,0 +1,304 @@
+From 10171609528dca4a26b4f174e4278e067b41d721 Mon Sep 17 00:00:00 2001
+From: MaazMukhtar <maazmukhtar966@gmail.com>
+Date: Wed, 29 Jul 2020 14:03:54 +0500
+Subject: [PATCH] patch file created
+
+---
+ clients.db        | Bin 8192 -> 8192 bytes
+ package-lock.json |  43 +++++++++++++++++++++++++++++++------------
+ package.json      |   2 +-
+ server.js         |  38 +++++++++++++++++++++++++-------------
+ 4 files changed, 57 insertions(+), 26 deletions(-)
+
+diff --git a/clients.db b/clients.db
+index 8ba54853a51784d74beb91f9096afc1675c427ea..3e3553a82d69e8b52a6533fe72fea62c1f781e33 100644
+GIT binary patch
+delta 128
+zcmV-`0Du30K!8Ay8v#X;976#`v0$MO5f8oq6bgC;3VIKB4=WDp4x_UY5M~Mrz5qc1
+z1^_!l9RZVo8ZrrEZ*6dFWprf&v%MMv0RaV*!5c;a1Ct0GK>-4jN*s#;1hdv0%mE1x
+iL<I%_FHs{2ld2v*1pq$;1^|=p9?%2;002Uh!XG}3e<3OW
+
+delta 128
+zcmZp0XmFSy&1f}I#+lJ-W5PmyLB3ZEB3u<LTowG~{M!8c_!eyz5=i6XaAss<uy$7F
+zoZKX3#GRR^TTqmrUX)r~ym_w_Gb1C*<b%>~jI5J6WE_EPFPUye=FQh+&M<Pgva&Jg
+f2P!j8UM*+G#>@Z&j+5WXU0`uwVPlwlNZt+rn$aO|
+
+diff --git a/package-lock.json b/package-lock.json
+index 9719cfc..8ea23a6 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -2483,7 +2483,8 @@
+         "ansi-regex": {
+           "version": "2.1.1",
+           "bundled": true,
+-          "dev": true
++          "dev": true,
++          "optional": true
+         },
+         "aproba": {
+           "version": "1.2.0",
+@@ -2504,12 +2505,14 @@
+         "balanced-match": {
+           "version": "1.0.0",
+           "bundled": true,
+-          "dev": true
++          "dev": true,
++          "optional": true
+         },
+         "brace-expansion": {
+           "version": "1.1.11",
+           "bundled": true,
+           "dev": true,
++          "optional": true,
+           "requires": {
+             "balanced-match": "^1.0.0",
+             "concat-map": "0.0.1"
+@@ -2524,17 +2527,20 @@
+         "code-point-at": {
+           "version": "1.1.0",
+           "bundled": true,
+-          "dev": true
++          "dev": true,
++          "optional": true
+         },
+         "concat-map": {
+           "version": "0.0.1",
+           "bundled": true,
+-          "dev": true
++          "dev": true,
++          "optional": true
+         },
+         "console-control-strings": {
+           "version": "1.1.0",
+           "bundled": true,
+-          "dev": true
++          "dev": true,
++          "optional": true
+         },
+         "core-util-is": {
+           "version": "1.0.2",
+@@ -2651,7 +2657,8 @@
+         "inherits": {
+           "version": "2.0.3",
+           "bundled": true,
+-          "dev": true
++          "dev": true,
++          "optional": true
+         },
+         "ini": {
+           "version": "1.3.5",
+@@ -2663,6 +2670,7 @@
+           "version": "1.0.0",
+           "bundled": true,
+           "dev": true,
++          "optional": true,
+           "requires": {
+             "number-is-nan": "^1.0.0"
+           }
+@@ -2677,6 +2685,7 @@
+           "version": "3.0.4",
+           "bundled": true,
+           "dev": true,
++          "optional": true,
+           "requires": {
+             "brace-expansion": "^1.1.7"
+           }
+@@ -2684,12 +2693,14 @@
+         "minimist": {
+           "version": "0.0.8",
+           "bundled": true,
+-          "dev": true
++          "dev": true,
++          "optional": true
+         },
+         "minipass": {
+           "version": "2.3.5",
+           "bundled": true,
+           "dev": true,
++          "optional": true,
+           "requires": {
+             "safe-buffer": "^5.1.2",
+             "yallist": "^3.0.0"
+@@ -2708,6 +2719,7 @@
+           "version": "0.5.1",
+           "bundled": true,
+           "dev": true,
++          "optional": true,
+           "requires": {
+             "minimist": "0.0.8"
+           }
+@@ -2788,7 +2800,8 @@
+         "number-is-nan": {
+           "version": "1.0.1",
+           "bundled": true,
+-          "dev": true
++          "dev": true,
++          "optional": true
+         },
+         "object-assign": {
+           "version": "4.1.1",
+@@ -2800,6 +2813,7 @@
+           "version": "1.4.0",
+           "bundled": true,
+           "dev": true,
++          "optional": true,
+           "requires": {
+             "wrappy": "1"
+           }
+@@ -2885,7 +2899,8 @@
+         "safe-buffer": {
+           "version": "5.1.2",
+           "bundled": true,
+-          "dev": true
++          "dev": true,
++          "optional": true
+         },
+         "safer-buffer": {
+           "version": "2.1.2",
+@@ -2921,6 +2936,7 @@
+           "version": "1.0.2",
+           "bundled": true,
+           "dev": true,
++          "optional": true,
+           "requires": {
+             "code-point-at": "^1.0.0",
+             "is-fullwidth-code-point": "^1.0.0",
+@@ -2940,6 +2956,7 @@
+           "version": "3.0.1",
+           "bundled": true,
+           "dev": true,
++          "optional": true,
+           "requires": {
+             "ansi-regex": "^2.0.0"
+           }
+@@ -2983,12 +3000,14 @@
+         "wrappy": {
+           "version": "1.0.2",
+           "bundled": true,
+-          "dev": true
++          "dev": true,
++          "optional": true
+         },
+         "yallist": {
+           "version": "3.0.3",
+           "bundled": true,
+-          "dev": true
++          "dev": true,
++          "optional": true
+         }
+       }
+     },
+@@ -5167,4 +5186,4 @@
+       }
+     }
+   }
+-}
++}
+\ No newline at end of file
+diff --git a/package.json b/package.json
+index bb95fa3..a843d38 100644
+--- a/package.json
++++ b/package.json
+@@ -33,4 +33,4 @@
+     "babel-preset-env": "^1.7.0",
+     "babel-watch": "^7.0.0"
+   }
+-}
++}
+\ No newline at end of file
+diff --git a/server.js b/server.js
+index 7ba16d7..4bd705d 100644
+--- a/server.js
++++ b/server.js
+@@ -6,7 +6,7 @@ const app = express();
+ app.use(express.json());
+ 
+ app.get('/', (req, res) => {
+-  return res.status(200).send({'message': 'SHIPTIVITY API. Read documentation to see API docs'});
++  return res.status(200).send({ 'message': 'SHIPTIVITY API. Read documentation to see API docs' });
+ });
+ 
+ // We are keeping one connection alive for the rest of the life application for simplicity
+@@ -26,8 +26,8 @@ const validateId = (id) => {
+     return {
+       valid: false,
+       messageObj: {
+-      'message': 'Invalid id provided.',
+-      'long_message': 'Id can only be integer.',
++        'message': 'Invalid id provided.',
++        'long_message': 'Id can only be integer.',
+       },
+     };
+   }
+@@ -36,8 +36,8 @@ const validateId = (id) => {
+     return {
+       valid: false,
+       messageObj: {
+-      'message': 'Invalid id provided.',
+-      'long_message': 'Cannot find client with that id.',
++        'message': 'Invalid id provided.',
++        'long_message': 'Cannot find client with that id.',
+       },
+     };
+   }
+@@ -55,8 +55,8 @@ const validatePriority = (priority) => {
+     return {
+       valid: false,
+       messageObj: {
+-      'message': 'Invalid priority provided.',
+-      'long_message': 'Priority can only be positive integer.',
++        'message': 'Invalid priority provided.',
++        'long_message': 'Priority can only be positive integer.',
+       },
+     };
+   }
+@@ -92,7 +92,7 @@ app.get('/api/v1/clients', (req, res) => {
+  * GET /api/v1/clients/{client_id} - get client by id
+  */
+ app.get('/api/v1/clients/:id', (req, res) => {
+-  const id = parseInt(req.params.id , 10);
++  const id = parseInt(req.params.id, 10);
+   const { valid, messageObj } = validateId(id);
+   if (!valid) {
+     res.status(400).send(messageObj);
+@@ -115,7 +115,7 @@ app.get('/api/v1/clients/:id', (req, res) => {
+  *
+  */
+ app.put('/api/v1/clients/:id', (req, res) => {
+-  const id = parseInt(req.params.id , 10);
++  const id = parseInt(req.params.id, 10);
+   const { valid, messageObj } = validateId(id);
+   if (!valid) {
+     res.status(400).send(messageObj);
+@@ -126,11 +126,23 @@ app.put('/api/v1/clients/:id', (req, res) => {
+   const client = clients.find(client => client.id === id);
+ 
+   /* ---------- Update code below ----------*/
+-
+-
+-
++  let statusCount = db.prepare("SELECT * FROM clients WHERE status=$status").all({ status: status }).length;
++  if (status != client.status && priority == null) {
++    db.prepare("UPDATE clients SET priority= priority - 1 WHERE status=$status AND priority > $priority").run({ priority: client.priority, status: client.status, id: client.id });
++    db.prepare("UPDATE clients SET priority=$priority, status=$status WHERE id=$id").run({ priority: ++statusCount, status: status, id: client.id });
++  }
++  else if (status == client.status && priority != null) {
++    db.prepare("UPDATE clients SET priority=priority - 1 WHERE priority > $priority AND status=$status").run({ priority: client.priority, status: status });
++    db.prepare("UPDATE clients SET priority=priority + 1 WHERE priority >= $priority AND status=$status").run({ priority: priority, status: status });
++    db.prepare("UPDATE clients SET priority=$priority WHERE id=$id").run({ priority: priority, id: client.id });
++  }
++  else if (status != client.status && priority != null) {
++    db.prepare("UPDATE clients SET priority= priority - 1 WHERE status=$status AND priority > $priority").run({ priority: client.priority, status: client.status, id: client.id });
++    db.prepare("UPDATE clients SET priority=priority + 1 WHERE priority >= $priority AND status=$status").run({ priority: priority, status: status });
++    db.prepare("UPDATE clients SET priority=$priority, status=$status WHERE id=$id").run({ priority: priority, status: status, id: client.id });
++  }
+   return res.status(200).send(clients);
+ });
+ 
+ app.listen(3001);
+-console.log('app running on port ', 3001);
++console.log('app running on port ', 3001);
+\ No newline at end of file
+-- 
+2.23.0.windows.1
+
